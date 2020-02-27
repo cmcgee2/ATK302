@@ -3,8 +3,8 @@ var song1, song2, song3;
 
 function preload() {
   song1 = loadSound('assets/donkey.mp3');
-  song1 = loadSound('assets/skate.mp3');
-  song1 = loadSound('assets/thrill.mp3');
+  song2 = loadSound('assets/skate.mp3');
+  song3 = loadSound('assets/thrill.mp3');
 
   song1.loop();
   song1.stop();
@@ -31,13 +31,13 @@ function draw() {
     case 1:
       break;
     case 2:
-      song1.play(); // this is what starts the sound
+      song2.play(); // this is what starts the sound
       myState = 3
       break;
     case 3:
       break;
     case 4:
-      song1.play(); // this is what starts the sound
+      song3.play(); // this is what starts the sound
       myState = 5
       break;
     case 5:
